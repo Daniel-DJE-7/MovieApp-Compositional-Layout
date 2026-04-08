@@ -72,8 +72,7 @@
 			children = (
 				8D05B6102F71FF1800950AF3 /* PopularViewController.swift */,
 			);
-			name = PopularViewController;
-			path = "New Group";
+			path = PopularViewController;
 			sourceTree = "<group>";
 		};
 		8D22D8E12F73241D009C0221 /* PopularView */ = {
