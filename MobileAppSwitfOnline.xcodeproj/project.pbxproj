@@ -7,15 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D05B6112F71FF1800950AF3 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05B6102F71FF1800950AF3 /* PopularViewController.swift */; };
+		8D22D8E62F7345E7009C0221 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D22D8E52F7345E7009C0221 /* UIView+Layout.swift */; };
+		8D22D8EB2F7359B4009C0221 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D22D8E92F7359B4009C0221 /* PopularCollectionViewCell.swift */; };
+		8D8B24422F78412A004ADA88 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8B24412F78412A004ADA88 /* Alamofire */; };
+		8D97B1722F773B0D00DB8D2C /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97B1712F773B0D00DB8D2C /* Popular.swift */; };
+		8D97B1762F7742E100DB8D2C /* PopularManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97B1752F7742E100DB8D2C /* PopularManager.swift */; };
+		8DB025BB2F80436B00B30F0B /* ActorsAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB025BA2F80436B00B30F0B /* ActorsAPICaller.swift */; };
+		8DB025BE2F80570500B30F0B /* CreditsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB025BD2F80570500B30F0B /* CreditsModel.swift */; };
+		8DB025C12F8085BE00B30F0B /* PopularActorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB025C02F8085BE00B30F0B /* PopularActorsCollectionViewCell.swift */; };
+		8DB6E2CE2F7F1F0400E06246 /* PopularDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6E2CD2F7F1F0400E06246 /* PopularDetailsViewController.swift */; };
+		8DB6E2D02F7F2BE600E06246 /* PopularDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6E2CF2F7F2BE600E06246 /* PopularDetailCollectionViewCell.swift */; };
 		8DC148062F64CB7D003FB887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC148052F64CB7D003FB887 /* AppDelegate.swift */; };
 		8DC148082F64CB7D003FB887 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC148072F64CB7D003FB887 /* SceneDelegate.swift */; };
 		8DC1480A2F64CB7D003FB887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC148092F64CB7D003FB887 /* ViewController.swift */; };
 		8DC1480D2F64CB7D003FB887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC1480B2F64CB7D003FB887 /* Main.storyboard */; };
 		8DC1480F2F64CB7F003FB887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC1480E2F64CB7F003FB887 /* Assets.xcassets */; };
 		8DC148122F64CB7F003FB887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC148102F64CB7F003FB887 /* LaunchScreen.storyboard */; };
+		8DC1481B2F64CE7F003FB887 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC1481A2F64CE7F003FB887 /* Kingfisher */; };
+		8DC1481E2F64CEE1003FB887 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC1481D2F64CEE1003FB887 /* YouTubeiOSPlayerHelper */; };
+		8DC148232F64D8DB003FB887 /* BaseListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC148222F64D8DB003FB887 /* BaseListCollectionViewController.swift */; };
+		8DC148252F64D96C003FB887 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC148242F64D96C003FB887 /* BaseTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D05B6102F71FF1800950AF3 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		8D22D8E52F7345E7009C0221 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		8D22D8E92F7359B4009C0221 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D97B1712F773B0D00DB8D2C /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		8D97B1752F7742E100DB8D2C /* PopularManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularManager.swift; sourceTree = "<group>"; };
+		8DB025BA2F80436B00B30F0B /* ActorsAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsAPICaller.swift; sourceTree = "<group>"; };
+		8DB025BD2F80570500B30F0B /* CreditsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsModel.swift; sourceTree = "<group>"; };
+		8DB025C02F8085BE00B30F0B /* PopularActorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularActorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DB6E2CD2F7F1F0400E06246 /* PopularDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDetailsViewController.swift; sourceTree = "<group>"; };
+		8DB6E2CF2F7F2BE600E06246 /* PopularDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DC148022F64CB7D003FB887 /* MobileAppSwitfOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppSwitfOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC148052F64CB7D003FB887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC148072F64CB7D003FB887 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +49,8 @@
 		8DC1480E2F64CB7F003FB887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC148112F64CB7F003FB887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC148132F64CB7F003FB887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC148222F64D8DB003FB887 /* BaseListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListCollectionViewController.swift; sourceTree = "<group>"; };
+		8DC148242F64D96C003FB887 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +58,112 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8B24422F78412A004ADA88 /* Alamofire in Frameworks */,
+				8DC1481B2F64CE7F003FB887 /* Kingfisher in Frameworks */,
+				8DC1481E2F64CEE1003FB887 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D05B60D2F71FE8200950AF3 /* PopularViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D05B6102F71FF1800950AF3 /* PopularViewController.swift */,
+			);
+			path = PopularViewController;
+			sourceTree = "<group>";
+		};
+		8D22D8E12F73241D009C0221 /* PopularView */ = {
+			isa = PBXGroup;
+			children = (
+				8D22D8E92F7359B4009C0221 /* PopularCollectionViewCell.swift */,
+			);
+			path = PopularView;
+			sourceTree = "<group>";
+		};
+		8D22D8E42F7345C8009C0221 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D22D8E52F7345E7009C0221 /* UIView+Layout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8D97B1702F773AEC00DB8D2C /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				8D97B1712F773B0D00DB8D2C /* Popular.swift */,
+			);
+			path = Popular;
+			sourceTree = "<group>";
+		};
+		8D97B1732F7742B700DB8D2C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025B82F8023D000B30F0B /* APICallers */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8D97B1742F7742CF00DB8D2C /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				8D97B1752F7742E100DB8D2C /* PopularManager.swift */,
+			);
+			path = Popular;
+			sourceTree = "<group>";
+		};
+		8DB025B82F8023D000B30F0B /* APICallers */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025B92F8042B700B30F0B /* ActorsAPICaller */,
+				8D97B1742F7742CF00DB8D2C /* Popular */,
+			);
+			path = APICallers;
+			sourceTree = "<group>";
+		};
+		8DB025B92F8042B700B30F0B /* ActorsAPICaller */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025BA2F80436B00B30F0B /* ActorsAPICaller.swift */,
+			);
+			path = ActorsAPICaller;
+			sourceTree = "<group>";
+		};
+		8DB025BC2F8056F000B30F0B /* CreditsModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025BD2F80570500B30F0B /* CreditsModel.swift */,
+			);
+			path = CreditsModel;
+			sourceTree = "<group>";
+		};
+		8DB025BF2F807A2300B30F0B /* PopularActorsDetailsViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025C02F8085BE00B30F0B /* PopularActorsCollectionViewCell.swift */,
+			);
+			path = PopularActorsDetailsViewCell;
+			sourceTree = "<group>";
+		};
+		8DB6E2CB2F7F1DDD00E06246 /* PopuplarDetailViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6E2CF2F7F2BE600E06246 /* PopularDetailCollectionViewCell.swift */,
+			);
+			path = PopuplarDetailViewCell;
+			sourceTree = "<group>";
+		};
+		8DB6E2CC2F7F1DF200E06246 /* PopularDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6E2CD2F7F1F0400E06246 /* PopularDetailsViewController.swift */,
+			);
+			path = PopularDetailViewController;
+			sourceTree = "<group>";
+		};
 		8DC147F92F64CB7D003FB887 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +183,11 @@
 		8DC148042F64CB7D003FB887 /* MobileAppSwitfOnline */ = {
 			isa = PBXGroup;
 			children = (
+				8D97B1732F7742B700DB8D2C /* Managers */,
+				8D22D8E42F7345C8009C0221 /* Helpers */,
+				8DC148212F64D2E1003FB887 /* Controller */,
+				8DC148202F64D2DD003FB887 /* View */,
+				8DC1481F2F64D2D8003FB887 /* Model */,
 				8DC148052F64CB7D003FB887 /* AppDelegate.swift */,
 				8DC148072F64CB7D003FB887 /* SceneDelegate.swift */,
 				8DC148092F64CB7D003FB887 /* ViewController.swift */,
@@ -65,6 +197,36 @@
 				8DC148132F64CB7F003FB887 /* Info.plist */,
 			);
 			path = MobileAppSwitfOnline;
+			sourceTree = "<group>";
+		};
+		8DC1481F2F64D2D8003FB887 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025BC2F8056F000B30F0B /* CreditsModel */,
+				8D97B1702F773AEC00DB8D2C /* Popular */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DC148202F64D2DD003FB887 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DB025BF2F807A2300B30F0B /* PopularActorsDetailsViewCell */,
+				8DB6E2CB2F7F1DDD00E06246 /* PopuplarDetailViewCell */,
+				8D22D8E12F73241D009C0221 /* PopularView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DC148212F64D2E1003FB887 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6E2CC2F7F1DF200E06246 /* PopularDetailViewController */,
+				8D05B60D2F71FE8200950AF3 /* PopularViewController */,
+				8DC148222F64D8DB003FB887 /* BaseListCollectionViewController.swift */,
+				8DC148242F64D96C003FB887 /* BaseTabBarViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +245,11 @@
 			dependencies = (
 			);
 			name = MobileAppSwitfOnline;
+			packageProductDependencies = (
+				8DC1481A2F64CE7F003FB887 /* Kingfisher */,
+				8DC1481D2F64CEE1003FB887 /* YouTubeiOSPlayerHelper */,
+				8D8B24412F78412A004ADA88 /* Alamofire */,
+			);
 			productName = MobileAppSwitfOnline;
 			productReference = 8DC148022F64CB7D003FB887 /* MobileAppSwitfOnline.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +278,11 @@
 				Base,
 			);
 			mainGroup = 8DC147F92F64CB7D003FB887;
+			packageReferences = (
+				8DC148192F64CE7F003FB887 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8DC1481C2F64CEE1003FB887 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				8D8B24402F78412A004ADA88 /* XCRemoteSwiftPackageReference "alamofire" */,
+			);
 			productRefGroup = 8DC148032F64CB7D003FB887 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +310,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D22D8E62F7345E7009C0221 /* UIView+Layout.swift in Sources */,
+				8DB6E2CE2F7F1F0400E06246 /* PopularDetailsViewController.swift in Sources */,
+				8DB6E2D02F7F2BE600E06246 /* PopularDetailCollectionViewCell.swift in Sources */,
+				8D05B6112F71FF1800950AF3 /* PopularViewController.swift in Sources */,
+				8DB025BB2F80436B00B30F0B /* ActorsAPICaller.swift in Sources */,
+				8DB025C12F8085BE00B30F0B /* PopularActorsCollectionViewCell.swift in Sources */,
 				8DC1480A2F64CB7D003FB887 /* ViewController.swift in Sources */,
 				8DC148062F64CB7D003FB887 /* AppDelegate.swift in Sources */,
+				8DB025BE2F80570500B30F0B /* CreditsModel.swift in Sources */,
+				8D22D8EB2F7359B4009C0221 /* PopularCollectionViewCell.swift in Sources */,
+				8D97B1762F7742E100DB8D2C /* PopularManager.swift in Sources */,
+				8D97B1722F773B0D00DB8D2C /* Popular.swift in Sources */,
 				8DC148082F64CB7D003FB887 /* SceneDelegate.swift in Sources */,
+				8DC148252F64D96C003FB887 /* BaseTabBarViewController.swift in Sources */,
+				8DC148232F64D8DB003FB887 /* BaseListCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +542,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D8B24402F78412A004ADA88 /* XCRemoteSwiftPackageReference "alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alamofire/alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+		8DC148192F64CE7F003FB887 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		8DC1481C2F64CEE1003FB887 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D8B24412F78412A004ADA88 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D8B24402F78412A004ADA88 /* XCRemoteSwiftPackageReference "alamofire" */;
+			productName = Alamofire;
+		};
+		8DC1481A2F64CE7F003FB887 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC148192F64CE7F003FB887 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		8DC1481D2F64CEE1003FB887 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC1481C2F64CEE1003FB887 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DC147FA2F64CB7D003FB887 /* Project object */;
 }
