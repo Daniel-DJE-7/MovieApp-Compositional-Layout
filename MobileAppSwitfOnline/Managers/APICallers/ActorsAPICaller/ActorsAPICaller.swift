@@ -14,9 +14,6 @@ class ActorsAPICaller {
   let baseURL = "https://api.themoviedb.org/3/movie/{movie_id}/credits"
   let apiKey = "f06be6bcababc93f2529c7384395a3cc"
   
-  //apicaller para credits
-  //gatillas por el id en el popular viewController
-  //el llamado de la API se hace en details
   
   func getPopularCreditsOfActors(movieId: Int, completion: @escaping (Result<MovieCreditsResponse, Error>) -> Void) {
     var components = URLComponents(string: baseURL.replacingOccurrences(of: "{movie_id}", with: String(movieId)))

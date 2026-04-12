@@ -7,11 +7,6 @@
 
 import UIKit
 
-/*enum Sections: Int, CaseIterable {
-  case detail = 0
-  case actors = 1
-}*/
-
 enum SectionType: Int, CaseIterable {
   case detailsMovie = 0// 1
   case actors = 1//2
@@ -30,6 +25,7 @@ class PopularDetailsViewController: BaseListCollectionViewController {
   var cast: [Cast] = []
   private var sections: [SectionType] = []
   private var actors: [Cast] = []
+  private let titlesSection: String = "Actors"
   
   
   override func viewDidLoad() {
@@ -60,7 +56,19 @@ class PopularDetailsViewController: BaseListCollectionViewController {
   
   //MARK: - Creating the compositional layout
   func createSectionLayout(section: Int) -> NSCollectionLayoutSection {
-   
+   //Header View
+    let header = [
+    NSCollectionLayoutBoundarySupplementaryItem(
+      layoutSize: NSCollectionLayoutSize(
+        widthDimension: .fractionalWidth(1),
+        heightDimension: .absolute(50)
+      ),
+      elementKind: UICollectionView.elementKindSectionHeader,
+      alignment: .top
+    )
+   ]
+    
+    //Sections
     switch section {
     case 0:
         //MARK: - first Vertical section
@@ -106,8 +114,9 @@ class PopularDetailsViewController: BaseListCollectionViewController {
         //section
         let secondSection = NSCollectionLayoutSection(group: secondGroup)
             secondSection.orthogonalScrollingBehavior = .continuous
-           secondSection.interGroupSpacing = 10
-            //secondSection.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 16)
+            secondSection.interGroupSpacing = 10
+            //I place this here to see the header in the second section
+            secondSection.boundarySupplementaryItems = header
         return secondSection
       
     default:
@@ -127,6 +136,7 @@ class PopularDetailsViewController: BaseListCollectionViewController {
         )
         //section
         let defaultSection = NSCollectionLayoutSection(group: defaultGroup)
+      defaultSection.boundarySupplementaryItems = header
         return defaultSection
 
     }
@@ -137,6 +147,7 @@ class PopularDetailsViewController: BaseListCollectionViewController {
   private func registerCells() {
     collectionView.register(PopularDetailCollectionViewCell.self, forCellWithReuseIdentifier: PopularDetailCollectionViewCell.identifier)
     collectionView.register(PopularActorsCollectionViewCell.self, forCellWithReuseIdentifier: PopularActorsCollectionViewCell.identifier)
+    collectionView.register(TitleHeaderCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: TitleHeaderCollectionReusableView.identifier)
   }
   
   
@@ -159,6 +170,7 @@ class PopularDetailsViewController: BaseListCollectionViewController {
   
 }
 
+// MARK: - Delegates
 extension PopularDetailsViewController: UICollectionViewDelegateFlowLayout {
   
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -200,4 +212,15 @@ extension PopularDetailsViewController: UICollectionViewDelegateFlowLayout {
       return cell
     }
   }
+  
+  //MARK: - HeaderView
+  override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+   
+    guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: TitleHeaderCollectionReusableView.identifier, for: indexPath) as? TitleHeaderCollectionReusableView, kind == UICollectionView.elementKindSectionHeader else {
+      return UICollectionReusableView()
+    }
+    header.configure(with: titlesSection)
+    return header
+  }
+  
 }
