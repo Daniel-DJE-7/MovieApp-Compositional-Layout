@@ -22,7 +22,6 @@ class PopularDetailsViewController: BaseListCollectionViewController {
   }()
   
   var movieDetails: Movie?
-  var cast: [Cast] = []
   private var sections: [SectionType] = []
   private var actors: [Cast] = []
   private let titlesSection: String = "Actors"
@@ -79,14 +78,15 @@ class PopularDetailsViewController: BaseListCollectionViewController {
             heightDimension: .absolute(450)
           )
         )
-        //group
+       
+      //group
         let firstGroup = NSCollectionLayoutGroup.vertical(
           layoutSize: firstItem.layoutSize,
           subitem: firstItem,
           count: 1
         )
-     // firstGroup.contentInsets = .init(top: 0, leading: 5, bottom: 5, trailing: 5)
-        //section
+
+      //section
         let section = NSCollectionLayoutSection(group: firstGroup)
         return section
       
@@ -95,27 +95,26 @@ class PopularDetailsViewController: BaseListCollectionViewController {
         //item
         let secondtItem = NSCollectionLayoutItem(
           layoutSize: NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
+            widthDimension: .absolute(160),
             heightDimension: .fractionalHeight(1.0)
           )
         )
-      secondtItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 6)
+      
+      secondtItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
         //group
         let secondGroup = NSCollectionLayoutGroup.horizontal(
           layoutSize: NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.9),
+            widthDimension: .estimated(160),
             heightDimension: .absolute(200)
           ),
-          subitem: secondtItem,
-          count: 5
+          subitems: [secondtItem]
         )
-      
-      secondGroup.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+
         //section
         let secondSection = NSCollectionLayoutSection(group: secondGroup)
             secondSection.orthogonalScrollingBehavior = .continuous
-            secondSection.interGroupSpacing = 10
-            //I place this here to see the header in the second section
+      secondSection.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
+      //I place this here to see the header in the second section
             secondSection.boundarySupplementaryItems = header
         return secondSection
       
